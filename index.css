@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+}
+
+.page {
+    font-size: 18px;
+    font-family: Poppins;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.header {
+    background-color: hsl(193, 100%, 96%);
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 20px 50px 10px 50px;
+}
+
+.hudd1 {
+    padding: 20px;
+}
+
+.hudd2 a {
+    padding: 14px 40px;
+    background-color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    color: black;
+    font-weight: bold;
+}
+
+.action {
+    padding: 20px 0px 20px 50px;
+}
+
+.action a {
+    padding: 14px 16px;
+    background-color: hsl(322, 100%, 66%);
+    text-decoration: none;
+    border-radius: 10px;
+    color: white;
+}
+
+.side {
+    padding: 20px 100px 20px 0px;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 10px;
+    background-color: white;
+}
+
+.calls,
+.image {
+    border: 5px solid whitesmoke;
+    text-align: center;
+    margin: 0px 50px;
+}
+
+.middle {
+    padding: 10px 50px;
+    text-align: center;
+    border: 5px solid whitesmoke;
+    margin: 200px 300px -20px 300px;
+    max-height: 300px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.middle a {
+    padding: 14px 16px;
+    background-color: hsl(322, 100%, 66%);
+    text-decoration: none;
+    border-radius: 10px;
+    color: white;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    background-color: rgb(19, 58, 19);
+    color: white;
+    padding: 100px 50px 10px 50px;
+    font-size: small;
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer ul {
+    list-style-type: none;
+}
+
+.grid1 {
+    grid-column: 1 / span 5;
+}
+
+.grid2 {
+    grid-column: 1 / span 2;
+}
+
+.grid3,
+.grid4 {
+    padding: 40px 0px;
+}
+
+#down {
+    padding: 60px 10px 0px 10px;
+}
+
+.grid1 img {
+    color: white;
+    padding-left: 40px;
+    filter: grayscale(100%);
+}
+
+.grid5 img {
+    padding-top: 20px;
+    background-color: hsla(120, 44%, 61%, 0.952);
+}
+
+@media screen and (max-width:375px) {
+    .header,
+    .main,
+    .footer {
+        grid-template-columns: 100%;
+    }
+}
